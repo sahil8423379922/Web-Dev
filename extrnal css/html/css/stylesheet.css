@@ -1,0 +1,13 @@
+
+@keyframes test{
+  from{background-color: red;}
+  to{background-color: yellow;}
+}
+.head{
+  background-color: yellow;
+  text-align: center;
+  animation-name: test;
+  animation-duration: 8s;
+  font-family: "Sofia", sans-serif;;
+  font-size: 60px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head">Sum of two numbers</h1>
+    <p id="para"></p>
+    <table
+      border="1"
+      style="width: 100%; border-collapse: collapse; height: 20px"
+    >
+      <tr>
+        <td>Sno</td>
+        <td>Name</td>
+        <td>Maths</td>
+        <td>Science</td>
+        <td>Total</td>
+      </tr>
+      <tr>
+        <td id="sno"></td>
+        <td id="name"></td>
+        <td id="maths"></td>
+        <td id="science"></td>
+        <td id="total"></td>
+      </tr>
+    </table>
+    <script>
+      //Variable Decleration
+      let num1 = 10;
+      let num2 = 20;
+      let cal = num1 + num2;
+      let name = "Sahil Jaiswal";
+      let maths = 67;
+      let science = 78;
+      /* kljlsdjfdsf
+      sdf
+      sfs
+      fs
+      fs
+      f
+      sf
+      */
+
+      document.getElementById("head").innerHTML =
+        "Sum of " + num1 + " and " + num2 + " is " + cal;
+      document.getElementById("para").innerHTML =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates exercitationem ea magnam impedit autem harum iste expedita voluptatem nisi incidunt. Illo unde ex in, culpa tenetur magnam dicta ad odio!";
+      document.getElementById("sno").innerHTML = 1;
+      document.getElementById("name").innerHTML = name;
+      document.getElementById("maths").innerHTML = maths;
+      document.getElementById("science").innerHTML = science;
+      document.getElementById("total").innerHTML = maths + science;
+    </script>
+  </body>
+</html>
