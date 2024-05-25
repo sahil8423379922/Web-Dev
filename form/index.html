@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .lbl {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .inpt {
+        margin-left: 10px;
+        height: 30px;
+        width: 460px;
+      }
+      .frm {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 30px;
+      }
+
+      .btn {
+        height: 30px;
+        width: 200px;
+      }
+
+      .ans {
+        text-align: center;
+      }
+    </style>
+
+    <script>
+      function add() {
+        let num1 = 0;
+        let num2 = 0;
+        let sum = 0;
+
+        num1 = parseInt(document.getElementById("num1").value);
+        num2 = parseInt(document.getElementById("num2").value);
+        sum = num1 + num2;
+        document.getElementById("ans").innerHTML = "Result is " + sum;
+
+        //Describe function
+        console.log(num1);
+        console.log(num2);
+        console.log("Sum is " + sum);
+        // console.error("Button is clicked");
+        // console.debug("Button is clicked");
+        // console.info("Button is cliked");
+        // console.warn("Button is clicked");
+        // window.alert("Button is clicked");
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <form class="frm">
+        <label class="lbl">Enter First Number</label>
+        <input id="num1" class="inpt" type="number" />
+        <br />
+        <br />
+        <label class="lbl">Enter Second Number</label>
+        <input id="num2" type="number" class="inpt" />
+        <br />
+        <br />
+        <button class="btn" type="button" onclick="add()">Show Result</button>
+      </form>
+    </div>
+
+    <hr style="margin-top: 30px; margin-bottom: 30px" />
+    <h1 id="ans" class="ans">Result is 0</h1>
+  </body>
+</html>
