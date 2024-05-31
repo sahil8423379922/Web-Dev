@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function check() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        var num3 = parseFloat(document.getElementById("num3").value);
+        var ans = 0;
+
+        console.log(num1 + " " + num2 + " " + num3);
+
+        if (num1 > num2 && num1 > num3) {
+          ans = num1;
+        } else if (num2 > num1 && num2 > num3) {
+          ans = num2;
+        } else {
+          ans = num3;
+        }
+
+        document.getElementById("ans").innerHTML = "Greater number is = " + ans;
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>Input Number 1</label>
+      <input id="num1" type="number" placeholder="Enter Number 1 " />
+      <br />
+      <br />
+      <label>Input Number 2</label>
+      <input id="num2" type="number" placeholder="Enter Number 2 " />
+      <br />
+      <br />
+      <label>Input Number 3</label>
+      <input id="num3" type="number" placeholder="Enter Number 3 " />
+      <br />
+      <br />
+      <button type="button" onclick="check()">Check</button>
+    </form>
+    <hr />
+    <h1 id="ans">Answer =</h1>
+  </body>
+</html>
+
+<!--
+  Create a Program to print month name in year by taking input from user
+-->

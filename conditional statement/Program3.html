@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function check() {
+        var num = parseFloat(document.getElementById("num1").value);
+        console.log(num);
+        if (num == 1) {
+          document.getElementById("ans").innerHTML = "It is Monday";
+        } else if (num == 2) {
+          document.getElementById("ans").innerHTML = "It is Tuesday";
+        } else if (num == 3) {
+          document.getElementById("ans").innerHTML = "It is Wednesday";
+        } else if (num == 4) {
+          document.getElementById("ans").innerHTML = "It is Thursday";
+        } else if (num == 5) {
+          document.getElementById("ans").innerHTML = "It is Friday";
+        } else if (num == 6) {
+          document.getElementById("ans").innerHTML = "It is Saturday";
+        } else if (num == 7) {
+          document.getElementById("ans").innerHTML = "It is Sunday";
+        } else {
+          document.getElementById("ans").innerHTML = "It is Invalid";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>Input Number</label>
+      <input id="num1" type="number" placeholder="Enter Number " />
+      <br />
+      <br />
+      <button type="button" onclick="check()">Check</button>
+    </form>
+    <hr />
+    <h1 id="ans">Answer =</h1>
+  </body>
+</html>
+
+<!--
+  Create a Program to print month name in year by taking input from user
+-->
