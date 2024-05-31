@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function check() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        var ans = 0;
+        //writing logic to find greater number
+        if (num1 > num2) {
+          ans = num1;
+        } else {
+          ans = num2;
+        }
+        document.getElementById("ans").innerHTML = "Greater Number is " + ans;
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <label>Input First Number</label>
+      <input id="num1" type="number" placeholder="Enter Number 1" />
+      <br />
+      <br />
+      <label>Input Second Number</label>
+      <input id="num2" type="number" placeholder="Enter Number 2" />
+      <br />
+      <br />
+      <button type="button" onclick="check()">Check</button>
+    </form>
+    <hr />
+    <h1 id="ans">Greater number is =</h1>
+  </body>
+</html>
