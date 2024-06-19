@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="ans"></h3>
+    <script>
+      var num = 1;
+      var mul = 2;
+      var cal = 0;
+      var ans = [];
+
+      while (num <= 10) {
+        cal = num * mul;
+        ans.push(mul + " X " + num + " = " + cal);
+
+        document.getElementById("ans").innerHTML = ans;
+        console.log(mul + " X " + num + " = " + cal);
+
+        num = num + 1;
+      }
+    </script>
+  </body>
+</html>
