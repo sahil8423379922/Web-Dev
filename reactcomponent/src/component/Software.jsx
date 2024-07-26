@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Software() {
+export default function Software({ nos }) {
   return (
     <>
       <div className="container mt-3">
@@ -11,6 +11,17 @@ export default function Software() {
           magni, quaerat consectetur necessitatibus animi ea repellat, facere
           dignissimos ullam sunt quisquam!
         </p>
+      </div>
+
+      <div>
+        {nos.map((value) => {
+          return (
+            <>
+              <h1>{value.name}</h1>
+              <p>{value.desc}</p>
+            </>
+          );
+        })}
       </div>
     </>
   );
