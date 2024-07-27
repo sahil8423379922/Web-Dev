@@ -2,6 +2,8 @@ import React from "react";
 import Computer from "./component/Computer";
 import Software from "./component/Software";
 import Navbar from "./component/Navbar";
+import Table from "./component/Table";
+import CmpCard from "./component/Card";
 
 export default function App() {
   var obj = {
@@ -34,8 +36,12 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Computer o={obj} />
-      <Software nos={name_of_software} />
+
+      <CmpCard />
+
+      <Table nos={name_of_software} />
+      {/* <Computer o={obj} />
+      <Software nos={name_of_software} /> */}
     </div>
   );
 }
