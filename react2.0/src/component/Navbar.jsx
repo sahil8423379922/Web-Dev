@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -12,27 +13,64 @@ export default function Navbar() {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link
+                  style={{
+                    textDecoration: "none",
+                    fontSize: "20",
+                    color: "#000000",
+                    paddingRight: "5px",
+                    paddingLeft: "5px",
+                  }}
+                  to={"/"}
+                >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link
+                  to={"/about"}
+                  style={{
+                    textDecoration: "none",
+                    fontSize: "20",
+                    color: "#000000",
+                    paddingRight: "5px",
+                    paddingLeft: "5px",
+                  }}
+                >
+                  {" "}
                   About
-                </a>
+                </Link>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link
+                  to={"/gallery"}
+                  style={{
+                    textDecoration: "none",
+                    fontSize: "20",
+                    color: "#000000",
+                    paddingRight: "5px",
+                    paddingLeft: "5px",
+                  }}
+                >
                   Gallery
-                </a>
+                </Link>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <Link
+                  to={"/contact"}
+                  style={{
+                    textDecoration: "none",
+                    fontSize: "20",
+                    color: "#000000",
+                    paddingRight: "5px",
+                    paddingLeft: "5px",
+                  }}
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

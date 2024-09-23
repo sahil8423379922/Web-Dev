@@ -43,7 +43,6 @@ export default function Index() {
   ];
   return (
     <>
-      <Navbar />
       <Card d={data} />
       <Table />
     </>
