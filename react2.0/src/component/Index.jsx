@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Card from "./Card";
 import Table from "./Table";
 
 export default function Index() {
+  const [msg, setmsg] = useState("What is your name?");
+
   const data = [
     {
       url: "https://static.displate.com/280x392/displate/2021-01-28/61f2a61d84a7c385afb8a4dd139810d3_9180d9b5b158d5b3dd86c841b1f7a500.jpg",
@@ -43,6 +45,14 @@ export default function Index() {
   ];
   return (
     <>
+      <h2>{msg}</h2>
+      <button
+        onClick={() => {
+          setmsg("My name is sahil Jaiswal");
+        }}
+      >
+        Check
+      </button>
       <Card d={data} />
       <Table />
     </>
